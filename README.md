@@ -1,11 +1,11 @@
-# ATRewardsChart-NRG
+# ATRewardsCharts-NRG
 Parses the NRG reward data csv file and creates a few charts for easy viewing.
 
 ![EnergiRewardsCharts-screenshot](https://github.com/amostodman/ATRewardsCharts-NRG/blob/main/EnergiRewardsCharts-screenshot.png)
 
 ## Requirements
 - [Node Monitor](https://docs.energi.software/en/advanced/nodemon) should already be installed
-- Updates to some of the node monitor scripts which can be seen on [my fork of the energi3-provisioning repo](https://github.com/amostodman/energi3-provisioning) (_specifically [this commit](https://github.com/amostodman/energi3-provisioning/commit/427b63dbe4dce20d8deea84e773c68b2e34877e6?branch=427b63dbe4dce20d8deea84e773c68b2e34877e6&diff=unified#diff-f59485292b4905a54edff162aefe7ecad6a009c7b59106f3bc03bd24dce7cb58)_)
+- Updates to some of the node monitor scripts which can be seen on [my fork of the energi3-provisioning repo](https://github.com/amostodman/energi3-provisioning) (_specifically [this commit](https://github.com/amostodman/energi3-provisioning/commit/427b63dbe4dce20d8deea84e773c68b2e34877e6?branch=427b63dbe4dce20d8deea84e773c68b2e34877e6)_)
   - Add [this nodemon-balance.sh](https://github.com/amostodman/energi3-provisioning/blob/427b63dbe4dce20d8deea84e773c68b2e34877e6/scripts/linux/nodemon-balance.sh) to the same directory on your node
   - Backup your existing nodemon-report.sh and add [this nodemon-report.sh](https://github.com/amostodman/energi3-provisioning/blob/427b63dbe4dce20d8deea84e773c68b2e34877e6/scripts/linux/nodemon-report.sh) to the same directory on your node.
   - Backup your existing nodemon.sh and add [this nodemon.sh](https://github.com/amostodman/energi3-provisioning/blob/427b63dbe4dce20d8deea84e773c68b2e34877e6/scripts/linux/nodemon.sh) to the same directory on your node.
