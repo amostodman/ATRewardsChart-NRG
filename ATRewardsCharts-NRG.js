@@ -33,6 +33,12 @@ function createChartsFromFile() {
     parseRewardData(createCharts)
 }
 
+function updateChartContainerHeights() {
+    $("#incrementAreaChartContainer").height(400)
+    $("#chartContainer").height(400)
+    $("#balanceDifferencesAreaChartContainer").height(400)
+}
+
 function updateHeader() {
     $("#nrgPriceContainer").html("Last parsed Energi price (NRG): $" + addZeroes(lastNrgPrice))
 }
@@ -73,6 +79,9 @@ function parseRewardData(callback) {
     if (regex.test($("#csvfile").val().toLowerCase())) {
         //Checks whether the browser supports HTML5
         if (typeof(FileReader) != "undefined") {
+
+            updateChartContainerHeights()
+            
             var reader = new FileReader()
 
             reader.onload = function(e) {
